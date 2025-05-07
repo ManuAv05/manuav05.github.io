@@ -20,53 +20,63 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Sobre mí</a>
+                        <a class="nav-link" href="SobreMi.html" data-cargar="contenido/SobreMi.html">Sobre mí</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="experiencia.html">Experiencia</a>
+                        <a class="nav-link" href="experiencia.html" data-cargar="contenido/experiencia.html">Experiencia</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="formacion.html">Formación</a>
+                        <a class="nav-link" href="formacion.html" data-cargar="contenido/formacion.html">Formación</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
+                        <a class="nav-link" href="contacto.html" data-cargar="contenido/contacto.html">Contacto</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Contenido principal -->
-    <main class="container my-5">
-        <div class="row">
-            <div class="col-lg-4">
-                <img src="source/foto-cv.jpg" alt="Mi foto de perfil" class="img-fluid rounded-circle mb-4">
-                <h2>Información personal</h2>
-                <ul class="list-unstyled">
-                    <li><strong>Nombre:</strong> Manuel Ávila Dugo</li>
-                    <li><strong>Edad:</strong> 19 años</li>
-                    <li><strong>Ubicación:</strong> Fuente Palmera, Córdoba, España</li>
-                    <li><strong>Email:</strong> manuelaviladugo@gmail.com</li>
-                </ul>
-            </div>
-            <div class="col-lg-8">
-                <h1 class="display-4">Hola, soy <span class="texto-morado">Manuel </span></h1>
-                <p class="lead">Estudiante del Módulo de Desarrollo de Aplicaciones Multiplataforma</p>
+    <main class="container my-5" id="contenido-dinamico" >
+        <!-- Hero Section - Texto de Bienvenida -->
+<section class="hero-section bg-light py-5 mb-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="pe-lg-4">
+                    <h1 class="display-4 fw-bold mb-3">
+                        ¡Hola! Soy <span class="text-primary">Manuel</span>
+                    </h1>
+                    <p class="lead text-muted mb-4">
+                        Estudiante de DAM | Apasionado por el código y los deportes | "Transformo ideas en soluciones digitales"
+                    </p>
+                    
+                    <div class="d-flex flex-wrap gap-3 mb-4">
+                        <span class="badge bg-primary p-2">
+                            <i class="bi bi-code-slash me-2"></i> Full-Stack Developer
+                        </span>
+                        <span class="badge bg-success p-2">
+                            <i class="bi bi-phone me-2"></i> Apps Móviles
+                        </span>
+                        <span class="badge bg-warning text-dark p-2">
+                            <i class="bi bi-lightning-charge me-2"></i> Aprendizaje Continuo
+                        </span>
+                    </div>
+                    
+                    <div class="d-flex gap-3">
                 
-                <div class="mt-5">
-                    <h3>Sobre mí</h3>
-                    <p>Soy un apasionado desarrollador de software con 19 años de experiencia creando soluciones tecnológicas innovadoras. Mi interés por este oficio empezó desde cuando yo era pequeño ya que siempre he estado muy interesado en todas las tecnologías y me gusta bastante crear todo tipo de programas con distintas tecnologías, lenguajes distintos, etc... </p>
-    
-                    <p>Lo que más disfruto de programar es la capacidad de resolver problemas complejos y ver cómo el código cobra vida para crear aplicaciones que impactan positivamente a los usuarios. Soy un firme creyente en que <strong>"el único límite en tecnología es nuestra imaginación"</strong>.</p>
+                        <a href="contenido/contacto.html" class="btn btn-outline-secondary btn-lg px-4" data-cargar="contenido/contacto.html">
+                            <i class="bi bi-envelope me-2"></i> Contactar
+                        </a>
+                    </div>
                 </div>
-                
+            </div>
             
-                </div>
-            </div>
+            
         </div>
+    </div>
+</section>
+        
     </main>
-
-    <!-- Pie de página -->
     <footer class="py-4" style="background-color: #7c3aed !important; color: white !important;">
 
         <div class="container text-center">
@@ -76,5 +86,7 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    
 </body>
 </html>

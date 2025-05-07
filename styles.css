@@ -18,7 +18,12 @@
     border-color: #0f1011;
   }
   .texto-morado{
-    color: var(--color-nav);
+    color: var(--color-text);
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
   }
 
 /* Ajustes para responsive */
