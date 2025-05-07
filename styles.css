@@ -1,68 +1,44 @@
-body {
-  font-family: "Segoe UI", sans-serif;
-  background-color: #ffffff;
-  color: #333;
-}
+:root {
+    --color-nav: #7c3aed;
+    --color-bg: #f5f3ff;
+    --color-text: #312e81;
+  }
+  
+  .navbar, footer {
+    background-color: var(--color-nav) !important;
+  }
+ 
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+  }
+  
+  .btn-primary {
+    background-color: #7c3aed;
+    border-color: #0f1011;
+  }
+  .texto-morado{
+    color: var(--color-nav);
+  }
 
-.cv-container {
-  max-width: 1000px;
-  margin: 2rem auto;
-  padding: 2rem;
-  border: 1px solid #dee2e6;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+/* Ajustes para responsive */
+@media (max-width: 768px) {
+    .timeline::after {
+        left: 31px;
+    }
+    
+    .timeline-date {
+        position: relative;
+        left: 0;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    
+    .timeline-content {
+        margin-left: 60px;
+    }
+    
+    .timeline-content::after {
+        left: -40px;
+    }
 }
-
-.section-title {
-  font-weight: bold;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  font-size: 1.3rem;
-  border-bottom: 2px solid #ccc;
-  padding-bottom: 5px;
-}
-
-.header-name {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 0;
-}
-
-.subheader-role {
-  font-size: 1.1rem;
-  color: #555;
-  margin-bottom: 1rem;
-}
-
-.contact-info, .social-links {
-  list-style: none;
-  padding: 0;
-}
-
-.contact-info li, .social-links li {
-  margin-bottom: 0.3rem;
-}
-
-.mono {
-  white-space: pre-line;
-  font-family: monospace;
-}
-
-.aserflex {
-  display: flex;
-  flex-direction: row;
-}
-
-.lineanegra {
-  border-top: solid 5px black;
-}
-
-.color {
-  background-color: #807979;
-  color: #58718A;
-}
-
-a {
-  text-decoration: none;
-}
-
-/*# sourceMappingURL=styles.css.map */
